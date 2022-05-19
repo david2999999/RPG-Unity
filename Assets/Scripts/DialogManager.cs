@@ -13,11 +13,15 @@ public class DialogManager : MonoBehaviour
     public string[] dialogLines;
 
     public int currentLine;
+    private bool justStarted;
+
+    public static DialogManager instance;
     
     // Start is called before the first frame update
     void Start()
     {
-        dialogText.text = dialogLines[currentLine];
+        dialogBox.SetActive(false);
+        instance = this;
     }
 
     // Update is called once per frame
@@ -27,14 +31,30 @@ public class DialogManager : MonoBehaviour
         {
             if (Input.GetButtonUp("Fire1"))
             {
-                if (++currentLine < dialogLines.Length)
+                if (!justStarted)
                 {
-                    dialogText.text = dialogLines[currentLine];
+                    if (++currentLine < dialogLines.Length)
+                    {
+                        dialogText.text = dialogLines[currentLine];
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(false);
+                    }
                 } else
                 {
-                    dialogBox.SetActive(false);
+                    justStarted = false;
                 }
             }
         }
+    }
+
+    public void showDialog(string[] lines)
+    {
+        dialogLines = lines;
+        currentLine = 0;
+        dialogText.text = dialogLines[currentLine];
+        justStarted = true;
+        dialogBox.SetActive(true);
     }
 }
