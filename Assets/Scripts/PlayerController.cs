@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
+
+    public bool canMove = true;
     
     // Start is called before the first frame update
     void Start()
@@ -33,13 +35,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+        rigidBody.velocity = canMove ? new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed : Vector2.zero;
 
-        animator.SetFloat("moveX", rigidBody.velocity.x);
-        animator.SetFloat("moveY", rigidBody.velocity.y);
-
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 ||
-            Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if ((Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 ||
+            Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1) && canMove)
         {
             animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));

@@ -20152,6 +20152,7 @@ GameObject:
   - component: {fileID: 2037361642}
   - component: {fileID: 2037361641}
   - component: {fileID: 2037361643}
+  - component: {fileID: 2037361645}
   - component: {fileID: 2037361644}
   m_Layer: 0
   m_Name: NPC_0
@@ -20220,7 +20221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037361640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.47, y: -2.21, z: 0}
+  m_LocalPosition: {x: 7.54, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20240,7 +20241,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.060546637, y: -0.01210928}
+  m_Offset: {x: -0.046721697, y: -0.01210928}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -20251,7 +20252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3734336, y: 1.3390598}
+  m_Size: {x: 1.4010835, y: 1.3390598}
   m_EdgeRadius: 0
 --- !u!114 &2037361644
 MonoBehaviour:
@@ -20266,9 +20267,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Welcome to this town!
-  - I will be your tour guide in this town
-  - Do let me know if you have any questions
+  - n-Girl
+  - Please help me!
+  - n-Player
+  - Is everything okay?
+  - n-Girl
+  - No!
+  - My family was kidnapped by dragons!
+  - n-Player
+  - Don't Worry
+  - I'll save them!
+--- !u!61 &2037361645
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037361640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017281294, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 1}
+    newSize: {x: 0.9375, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9029374, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &7362775954402202206
 PrefabInstance:
   m_ObjectHideFlags: 0
