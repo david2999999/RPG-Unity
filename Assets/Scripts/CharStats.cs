@@ -16,6 +16,7 @@ public class CharStats : MonoBehaviour
     public int maxHP = 100;
     public int currentMP;
     public int maxMP = 30;
+    public int[] mpLvlBonus;
 
     public int strength;
     public int defense;
@@ -31,12 +32,19 @@ public class CharStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        expToNextLevel = new int[maxLevel + 1];
+        expToNextLevel = new int[maxLevel];
         expToNextLevel[1] = baseExp;
 
-        for (int i = 2; i <= maxLevel; i++)
+        for (int i = 2; i < maxLevel; i++)
         {
             expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
+        }
+
+        mpLvlBonus = new int[maxLevel + 1];
+
+        for (int i = 1; i <= maxLevel; i++)
+        {
+            mpLvlBonus[i] = Random.Range(0, 6);
         }
     }
 
@@ -45,7 +53,7 @@ public class CharStats : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            AddExp(500);
+            AddExp(1000);
         }
     }
 
@@ -53,9 +61,29 @@ public class CharStats : MonoBehaviour
     {
         currentExp += expToAdd;
 
-        if (currentExp > expToNextLevel[playerLevel])
+        if (playerLevel < maxLevel && currentExp > expToNextLevel[playerLevel])
         {
             currentExp -= expToNextLevel[playerLevel++];
+
+            // determine whether to add to str or def based on odd or even
+            if (playerLevel % 2 == 0)
+            {
+                strength++;
+            } else
+            {
+                defense++;
+            }
+
+            maxHP = Mathf.FloorToInt(maxHP * 1.05f);
+            currentHP = maxHP;
+
+            maxMP += mpLvlBonus[playerLevel];
+            currentMP = maxMP;
+        }
+
+        if (playerLevel >= maxLevel)
+        {
+            currentExp = 0;
         }
     }
 }
