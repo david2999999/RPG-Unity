@@ -41,7 +41,7 @@ public class DialogManager : MonoBehaviour
                     else
                     {
                         dialogBox.SetActive(false);
-                        PlayerController.instance.canMove = true;
+                        GameManager.instance.dialogActive = false;
                     }
                 } else
                 {
@@ -53,7 +53,7 @@ public class DialogManager : MonoBehaviour
 
     public void showDialog(string[] lines, bool isPerson)
     {
-        PlayerController.instance.canMove = false;
+        GameManager.instance.dialogActive = true;
 
         dialogLines = lines;
         currentLine = 0;
