@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1327130498466812209}
+  - component: {fileID: 644324388}
   m_Layer: 0
   m_Name: Essentials Loader
   m_TagString: Untagged
@@ -31,3 +32,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &644324388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4113399760198797354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2908d14204ba7004fb80015198bf13cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIScreen: {fileID: 2548850096349005868, guid: ff13dec43851dda4b8d01ccc4b955ad5, type: 3}
+  player: {fileID: 159374917220647940, guid: 9fea990398b6fd44f8367d99d139d164, type: 3}
+  gameManager: {fileID: 4131412348101128425, guid: 245bdc433389da64bac864d9550a761f, type: 3}
