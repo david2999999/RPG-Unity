@@ -184,67 +184,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882a1e96899189347b827c5761c84d64, type: 3}
---- !u!1 &122503093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 122503095}
-  - component: {fileID: 122503094}
-  m_Layer: 0
-  m_Name: PlayerStat
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &122503094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122503093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98049dd96f3e5054e88d96ae96442b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charName: David
-  playerLevel: 1
-  currentExp: 250
-  expToNextLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  maxLevel: 100
-  baseExp: 1000
-  currentHP: 0
-  maxHP: 100
-  currentMP: 0
-  maxMP: 30
-  strength: 15
-  defense: 12
-  weaponPower: 0
-  armorPower: 0
-  equipedWeapon: 
-  equipedArmor: 
-  charImage: {fileID: -783326021, guid: 228c0332e093b2e46b50b916ddfdca31, type: 3}
---- !u!4 &122503095
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122503093}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.414078, y: 0.29450056, z: 4.5033684}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453193793
 GameObject:
   m_ObjectHideFlags: 0
@@ -15614,6 +15553,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656dea747ad2a9b47821de82f1895b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1241473905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4131412348101128425, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+  m_PrefabInstance: {fileID: 4131412349301396376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1374803471
 GameObject:
   m_ObjectHideFlags: 0
@@ -20487,6 +20431,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9029374, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &4131412349301396376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4131412348101128425, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.414078
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.29450056
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.5033684
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 245bdc433389da64bac864d9550a761f, type: 3}
 --- !u!1001 &7362775954402202206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20563,3 +20564,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIScreen: {fileID: 2548850096349005868, guid: ff13dec43851dda4b8d01ccc4b955ad5, type: 3}
   player: {fileID: 159374917220647940, guid: 9fea990398b6fd44f8367d99d139d164, type: 3}
+  gameManager: {fileID: 1241473905}
