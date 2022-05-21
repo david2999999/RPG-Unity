@@ -35,7 +35,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidBody.velocity = canMove ? new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed : Vector2.zero;
+        if (canMove)
+        {
+            rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+            animator.SetFloat("moveX", rigidBody.velocity.x);
+            animator.SetFloat("moveY", rigidBody.velocity.y);
+        }
+        else
+        {
+            rigidBody.velocity = Vector2.zero;
+        }
 
         if ((Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 ||
             Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1) && canMove)

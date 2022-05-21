@@ -15472,26 +15472,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1833835233, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 1833835233, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 2219837739383312618, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
-      propertyPath: entrance
-      value: 
-      objectReference: {fileID: 956824316}
-    - target: {fileID: 2219837739383312618, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
-      propertyPath: areaToLoad
-      value: CountrySide
-      objectReference: {fileID: 0}
-    - target: {fileID: 2219837739383312618, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
-      propertyPath: areaTransitionName
-      value: Countryside-1
-      objectReference: {fileID: 0}
     - target: {fileID: 2219837739383312619, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -15542,17 +15522,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
---- !u!114 &956824316 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1833835232, guid: 51ce46c7cdc56c2438d4bb3b2f4fb9fe, type: 3}
-  m_PrefabInstance: {fileID: 956824315}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 656dea747ad2a9b47821de82f1895b20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1374803471
 GameObject:
   m_ObjectHideFlags: 0
@@ -20490,10 +20459,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 644324388, guid: 59f7e40e79004b345b403e46abd84813, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 159374917220647940, guid: 9fea990398b6fd44f8367d99d139d164, type: 3}
     - target: {fileID: 1327130498466812209, guid: 59f7e40e79004b345b403e46abd84813, type: 3}
       propertyPath: m_RootOrder
       value: 4

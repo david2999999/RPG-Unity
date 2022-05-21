@@ -138,9 +138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 159374917220647936}
-  moveSpeed: 10
+  moveSpeed: 5
   animator: {fileID: 159374917220647938}
   areaTransitionName: 
+  canMove: 1
 --- !u!95 &159374917220647938
 Animator:
   serializedVersion: 4
