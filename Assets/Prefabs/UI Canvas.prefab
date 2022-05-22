@@ -4085,9 +4085,9 @@ MonoBehaviour:
   - {fileID: 151657715}
   - {fileID: 547901633}
   expText:
-  - {fileID: 6065710792101316799}
-  - {fileID: 466278188}
-  - {fileID: 2111176146}
+  - {fileID: 1278209009}
+  - {fileID: 1109792565}
+  - {fileID: 1282414574}
   expSlider:
   - {fileID: 3570002911318653617}
   - {fileID: 1929675458}
