@@ -20,6 +20,10 @@ public class GameMenu : MonoBehaviour
     public Image[] charImages;
     public GameObject[] charStatHolder;
 
+    public Text statusName, statusHP, statusMP, statusStr, statusDef, 
+        statusWpnEqpd, statusWpnPwr, statusArmrEqpd, statusArmrPwr, statusExp;
+    public Image statusImage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +90,7 @@ public class GameMenu : MonoBehaviour
     public void OpenStatus()
     {
         UpdateMainStats();
+        StatusChar(0);
 
         for (int i = 0; i < statusButtons.Length; i++)
         {
@@ -100,5 +105,30 @@ public class GameMenu : MonoBehaviour
 
         theMenu.SetActive(false);
         GameManager.instance.gameMenuOpen = false;
+    }
+
+    public void StatusChar(int selected)
+    {
+        statusName.text = playerStats[selected].charName;
+        statusHP.text = playerStats[selected].currentHP + "/" + playerStats[selected].maxHP;
+        statusMP.text = playerStats[selected].currentMP + "/" + playerStats[selected].maxMP;
+        statusStr.text = playerStats[selected].strength.ToString();
+        statusDef.text = playerStats[selected].defense.ToString();
+
+        if (playerStats[selected].equippedWeapon != "")
+        {
+            statusWpnEqpd.text = playerStats[selected].equippedWeapon;
+        }
+
+        statusWpnPwr.text = playerStats[selected].weaponPower.ToString();
+
+        if (playerStats[selected].equippedArmor != "")
+        {
+            statusWpnEqpd.text = playerStats[selected].equippedArmor;
+        }
+
+        statusArmrPwr.text = playerStats[selected].armorPower.ToString();
+        statusExp.text = (playerStats[selected].expToNextLevel[playerStats[selected].playerLevel] - playerStats[selected].currentExp).ToString();
+        statusImage.sprite = playerStats[selected].charImage;
     }
 }
