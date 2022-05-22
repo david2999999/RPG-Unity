@@ -51,6 +51,18 @@ MonoBehaviour:
   - {fileID: 4131412349280627758}
   - {fileID: 4131412348805335736}
   - {fileID: 4131412348399167283}
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingBetweenAreas: 0
+  itemsHeld: []
+  numberOfItems: 
+  referenceItems:
+  - {fileID: 3593638812055669642, guid: 4b8f02967b757954ea3bff45755afb50, type: 3}
+  - {fileID: 7973631403259120832, guid: 23573fa72afbc824fb8d590b7ef76023, type: 3}
+  - {fileID: 5854356229768448068, guid: 1fbf3eb4b28baca42ac88e940588ae75, type: 3}
+  - {fileID: 4712504284471190955, guid: adf21cd3f0b6ee14f9031f8089c4c7d8, type: 3}
+  - {fileID: 2276385851936514204, guid: 998278362924bb0438b97d24536261ec, type: 3}
+  - {fileID: 7606184763486638276, guid: 6c0cd380865f37540a58c785f0c037c1, type: 3}
 --- !u!1 &4131412348399167281
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,8 +122,8 @@ MonoBehaviour:
   defense: 16
   weaponPower: 0
   armorPower: 0
-  equipedWeapon: 
-  equipedArmor: 
+  equippedWeapon: 
+  equippedArmor: 
   charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
 --- !u!1 &4131412348805335686
 GameObject:
@@ -172,8 +184,8 @@ MonoBehaviour:
   defense: 16
   weaponPower: 0
   armorPower: 0
-  equipedWeapon: 
-  equipedArmor: 
+  equippedWeapon: 
+  equippedArmor: 
   charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
 --- !u!1 &4131412349280627757
 GameObject:
@@ -234,6 +246,6 @@ MonoBehaviour:
   defense: 12
   weaponPower: 0
   armorPower: 0
-  equipedWeapon: 
-  equipedArmor: 
+  equippedWeapon: 
+  equippedArmor: 
   charImage: {fileID: -783326021, guid: 228c0332e093b2e46b50b916ddfdca31, type: 3}

@@ -11,6 +11,7 @@ public class GameMenu : MonoBehaviour
 
     private CharStats[] playerStats;
 
+    [Header("Player Information")]
     public Text[] nameText;
     public Text[] hpText;
     public Text[] mpText;
