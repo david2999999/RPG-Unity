@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Iron Sword
   description: Sharp!
   value: 25
-  itemSprite: {fileID: 435329437, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
+  itemSprite: {fileID: 485346660, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   amountToChange: 0
   affectHP: 0
   affectMP: 0
