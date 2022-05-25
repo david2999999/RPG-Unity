@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameMenu : MonoBehaviour
 {
+    public static GameMenu instance;
+
     public GameObject theMenu;
     public GameObject[] windows;
     public GameObject[] statusButtons;
@@ -34,11 +36,20 @@ public class GameMenu : MonoBehaviour
     public Text statusExp;
     public Image statusImage;
 
+    [Header("List of Item Holders")]
     public ItemButton[] itemButtons;
+
+    [Header("Selected Item")]
+    public string selectedItem;
+    public Item activeItem;
+    public Text itemName;
+    public Text itemDescription;
+    public Text useButtonText;
         
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         theMenu.SetActive(false);
     }
 
@@ -163,5 +174,23 @@ public class GameMenu : MonoBehaviour
                 itemButtons[i].amountText.text = "";
             }
         }
+    }
+
+    public void SelectItem(Item item)
+    {
+        activeItem = item;
+
+        if (activeItem.isItem)
+        {
+            useButtonText.text = "Use";
+        } 
+
+        if (activeItem.isWeapon || activeItem.isArmor)
+        {
+            useButtonText.text = "Equip";
+        }
+
+        itemName.text = activeItem.itemName;
+        itemDescription.text = activeItem.description;
     }
 }
