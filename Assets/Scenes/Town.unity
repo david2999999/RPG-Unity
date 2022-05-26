@@ -20463,22 +20463,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4131412348101128426, guid: 245bdc433389da64bac864d9550a761f, type: 3}
-      propertyPath: itemsHeld.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4131412348101128426, guid: 245bdc433389da64bac864d9550a761f, type: 3}
-      propertyPath: itemsHeld.Array.data[1]
-      value: Health Potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 4131412348101128426, guid: 245bdc433389da64bac864d9550a761f, type: 3}
-      propertyPath: numberOfItems.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4131412348101128426, guid: 245bdc433389da64bac864d9550a761f, type: 3}
-      propertyPath: numberOfItems.Array.data[1]
-      value: 21
-      objectReference: {fileID: 0}
     - target: {fileID: 4131412348101128427, guid: 245bdc433389da64bac864d9550a761f, type: 3}
       propertyPath: m_RootOrder
       value: 8
