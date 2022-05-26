@@ -49,6 +49,9 @@ public class GameMenu : MonoBehaviour
     [Header("Pressing the Use Button for Items")]
     public GameObject itemCharChoiceMenu;
     public Text[] itemCharChoiceNames;
+
+    [Header("Gold Amount")]
+    public Text goldText;
         
     // Start is called before the first frame update
     void Start()
@@ -96,6 +99,8 @@ public class GameMenu : MonoBehaviour
                 charStatHolder[i].SetActive(false);
             }
         }
+
+        goldText.text = GameManager.instance.currentGold.ToString() + "g";
     }
 
     public void ToggleWindow(int windowNumber)
