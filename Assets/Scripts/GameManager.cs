@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
+        SortItems();
         DontDestroyOnLoad(gameObject);
     }
 
