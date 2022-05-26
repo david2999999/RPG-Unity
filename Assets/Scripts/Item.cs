@@ -17,7 +17,6 @@ public class Item : MonoBehaviour
     public Sprite itemSprite;
 
     [Header("Item Details")]
-
     public int amountToChange;
     public bool affectHP;
     public bool affectMP;
@@ -37,5 +36,54 @@ public class Item : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Use(int charToUseOn)
+    {
+        CharStats selectedChar = GameManager.instance.playerStats[charToUseOn];
+
+        if (isItem)
+        {
+            if (affectHP)
+            {
+                selectedChar.currentHP += amountToChange;
+                selectedChar.currentHP = Mathf.Min(selectedChar.currentHP, selectedChar.maxHP);
+            }
+
+            if (affectMP)
+            {
+                selectedChar.currentMP += amountToChange;
+                selectedChar.currentMP = Mathf.Min(selectedChar.currentMP, selectedChar.maxMP);
+            }
+
+            if (affectStr)
+            {
+                selectedChar.strength += amountToChange;
+            }
+        }
+
+        if (isWeapon)
+        {
+            if (selectedChar.equippedWeapon != "")
+            {
+                GameManager.instance.AddItem(selectedChar.equippedWeapon);
+            }
+
+            selectedChar.equippedWeapon = itemName;
+            selectedChar.weaponPower = weaponStrength;
+        }
+
+        if (isArmor)
+        {
+            if (selectedChar.equippedArmor != "")
+            {
+                GameManager.instance.AddItem(selectedChar.equippedArmor);
+            }
+
+            selectedChar.equippedArmor = itemName;
+            selectedChar.armorPower = armorStrength;
+        }
+
+        GameManager.instance.RemoveItem(itemName);
     }
 }
