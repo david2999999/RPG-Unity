@@ -49911,47 +49911,6 @@ MonoBehaviour:
   - {fileID: 322101047}
   - {fileID: 429597356}
   - {fileID: 1431590988}
-  itemsForSale:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   sellItemButtons:
   - {fileID: 351225492}
   - {fileID: 1048601921}
@@ -49993,6 +49952,54 @@ MonoBehaviour:
   - {fileID: 1641063321}
   - {fileID: 1178073092}
   - {fileID: 1756275945}
+  itemsForSale:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  selectedItem: {fileID: 0}
+  buyItemName: {fileID: 1885962776}
+  buyItemDescription: {fileID: 72334661}
+  buyItemValue: {fileID: 1120981741}
+  sellItemName: {fileID: 683586276}
+  sellItemDescription: {fileID: 243297505}
+  sellItemValue: {fileID: 1202457971}
 --- !u!1 &2548850097255393426
 GameObject:
   m_ObjectHideFlags: 0
