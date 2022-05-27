@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4131412348101128427}
   - component: {fileID: 4131412348101128426}
+  - component: {fileID: 4131412349301396378}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -54,6 +55,7 @@ MonoBehaviour:
   gameMenuOpen: 0
   dialogActive: 0
   fadingBetweenAreas: 0
+  shopActive: 0
   itemsHeld:
   - 
   - Health Potion
@@ -104,6 +106,25 @@ MonoBehaviour:
   - {fileID: 2276385851936514204, guid: 998278362924bb0438b97d24536261ec, type: 3}
   - {fileID: 7606184763486638276, guid: 6c0cd380865f37540a58c785f0c037c1, type: 3}
   currentGold: 100
+--- !u!114 &4131412349301396378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4131412348101128425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94981c6ad9cfbb343b650c17bb3de5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames:
+  - 
+  - Fight the Demon
+  - Enter The Cave
+  - Quest Test
+  - Save the World
+  questMarkersComplete: 
 --- !u!1 &4131412348399167281
 GameObject:
   m_ObjectHideFlags: 0
