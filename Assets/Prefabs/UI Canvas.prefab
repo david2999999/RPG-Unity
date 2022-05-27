@@ -49870,6 +49870,129 @@ MonoBehaviour:
   buyMenu: {fileID: 1048809691}
   sellMenu: {fileID: 1372410848}
   goldText: {fileID: 818685733}
+  buyItemButtons:
+  - {fileID: 1039634964}
+  - {fileID: 2060173935}
+  - {fileID: 2112164185}
+  - {fileID: 1147983514}
+  - {fileID: 26342130}
+  - {fileID: 1522175664}
+  - {fileID: 1875768802}
+  - {fileID: 477101285}
+  - {fileID: 1081406652}
+  - {fileID: 1461032760}
+  - {fileID: 1279386502}
+  - {fileID: 318339769}
+  - {fileID: 105036642}
+  - {fileID: 1885750257}
+  - {fileID: 1179503839}
+  - {fileID: 2032971778}
+  - {fileID: 2012226520}
+  - {fileID: 80156063}
+  - {fileID: 918835156}
+  - {fileID: 111923005}
+  - {fileID: 576202731}
+  - {fileID: 1892620199}
+  - {fileID: 28825153}
+  - {fileID: 1274390212}
+  - {fileID: 1412925254}
+  - {fileID: 579853154}
+  - {fileID: 1812145912}
+  - {fileID: 1582445185}
+  - {fileID: 139845060}
+  - {fileID: 2107610928}
+  - {fileID: 1493717915}
+  - {fileID: 361464922}
+  - {fileID: 1205117237}
+  - {fileID: 434397305}
+  - {fileID: 393196785}
+  - {fileID: 2116105238}
+  - {fileID: 996018521}
+  - {fileID: 322101047}
+  - {fileID: 429597356}
+  - {fileID: 1431590988}
+  itemsForSale:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  sellItemButtons:
+  - {fileID: 351225492}
+  - {fileID: 1048601921}
+  - {fileID: 881128360}
+  - {fileID: 1149970571}
+  - {fileID: 1351098799}
+  - {fileID: 712041188}
+  - {fileID: 1653542943}
+  - {fileID: 685236998}
+  - {fileID: 1051668761}
+  - {fileID: 253431153}
+  - {fileID: 1414516643}
+  - {fileID: 777450175}
+  - {fileID: 201586447}
+  - {fileID: 8732467}
+  - {fileID: 735371033}
+  - {fileID: 1794807332}
+  - {fileID: 1789059311}
+  - {fileID: 35325937}
+  - {fileID: 89665861}
+  - {fileID: 1907712141}
+  - {fileID: 2084500549}
+  - {fileID: 218636111}
+  - {fileID: 1741530892}
+  - {fileID: 1084395985}
+  - {fileID: 1102182702}
+  - {fileID: 2006293600}
+  - {fileID: 890180758}
+  - {fileID: 1401224985}
+  - {fileID: 801639613}
+  - {fileID: 888627959}
+  - {fileID: 2136122326}
+  - {fileID: 184501844}
+  - {fileID: 1618518450}
+  - {fileID: 104124504}
+  - {fileID: 1959407787}
+  - {fileID: 1450942535}
+  - {fileID: 579660241}
+  - {fileID: 1641063321}
+  - {fileID: 1178073092}
+  - {fileID: 1756275945}
 --- !u!1 &2548850097255393426
 GameObject:
   m_ObjectHideFlags: 0
